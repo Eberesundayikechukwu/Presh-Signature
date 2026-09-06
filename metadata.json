@@ -1,0 +1,6 @@
+{
+  "name": "Presh Signature",
+  "description": "Premium catering, baking, custom cakes, healthy refreshments, and memorable celebrations website.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
