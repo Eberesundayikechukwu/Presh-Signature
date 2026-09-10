@@ -13,7 +13,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
   return (
     <div id="page-about" className="py-8 sm:py-12 space-y-16 sm:space-y-20 px-6 sm:px-8">
       <div className="max-w-6xl mx-auto space-y-16 sm:space-y-20">
-        
+
         {/* Page Header with Entrance Animation */}
         <motion.section
           id="about-intro-header"
@@ -61,7 +61,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               >
                 <img
                   id="about-kitchen-image"
-                  src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80"
+                  src="images/about-kitchen.jpg"
                   alt="Artisanal kitchen craftsmanship and baking at Presh Signature"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
@@ -75,7 +75,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               <h2 className="font-serif text-2xl sm:text-3xl text-[#5C1A2B] font-semibold">
                 Culinary Passion &amp; Craftsmanship
               </h2>
-              
+
               <blockquote className="text-base sm:text-lg text-[#4A3B37] leading-relaxed border-l-2 border-[#C9972B] pl-5 font-normal">
                 {BRAND.about}
               </blockquote>

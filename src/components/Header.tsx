@@ -34,9 +34,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
           onClick={(e) => handleNavClick('home', e)}
           className="group flex items-center gap-3 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#5C1A2B]"
         >
-          <div className="w-10 h-10 rounded-full border border-[#C9972B] bg-white flex items-center justify-center text-[#5C1A2B] font-serif text-xl font-bold shadow-sm transition-transform duration-300 group-hover:scale-105">
-            P
-          </div>
+          <img src="/logo.png" alt="Presh Signature logo" className="w-17 h-17 rounded-full object-cover" />
           <div>
             <span className="block font-serif text-2xl sm:text-[26px] tracking-wide text-[#5C1A2B] font-semibold leading-none">
               {BRAND.name}
@@ -57,11 +55,10 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
                 id={`nav-link-${item.page}`}
                 href={`#/${item.page === 'home' ? '' : item.page}`}
                 onClick={(e) => handleNavClick(item.page, e)}
-                className={`relative py-1 text-sm tracking-wider uppercase font-medium transition-colors duration-200 ${
-                  isActive
-                    ? 'text-[#5C1A2B] font-semibold'
-                    : 'text-[#5C1A2B]/75 hover:text-[#5C1A2B]'
-                }`}
+                className={`relative py-1 text-sm tracking-wider uppercase font-medium transition-colors duration-200 ${isActive
+                  ? 'text-[#5C1A2B] font-semibold'
+                  : 'text-[#5C1A2B]/75 hover:text-[#5C1A2B]'
+                  }`}
               >
                 {item.label}
                 {isActive && (
@@ -112,11 +109,10 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
                   id={`mobile-nav-link-${item.page}`}
                   href={`#/${item.page === 'home' ? '' : item.page}`}
                   onClick={(e) => handleNavClick(item.page, e)}
-                  className={`flex items-center justify-between py-2.5 px-4 rounded-md text-base tracking-wide uppercase transition-colors ${
-                    isActive
-                      ? 'bg-white text-[#5C1A2B] font-semibold border-l-4 border-[#C9972B]'
-                      : 'text-[#5C1A2B]/85 hover:bg-white/50'
-                  }`}
+                  className={`flex items-center justify-between py-2.5 px-4 rounded-md text-base tracking-wide uppercase transition-colors ${isActive
+                    ? 'bg-white text-[#5C1A2B] font-semibold border-l-4 border-[#C9972B]'
+                    : 'text-[#5C1A2B]/85 hover:bg-white/50'
+                    }`}
                 >
                   <span>{item.label}</span>
                   {isActive && <span className="w-2 h-2 rounded-full bg-[#C9972B]" />}

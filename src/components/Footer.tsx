@@ -23,9 +23,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           {/* Brand Info */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full border border-[#C9972B] bg-white flex items-center justify-center text-[#5C1A2B] font-serif font-bold text-base">
-                P
-              </div>
+              <img src="/logo.png" alt="Presh Signature logo" className="w-8 h-8 rounded-full object-cover" />
               <span className="font-serif text-2xl text-[#5C1A2B] font-bold tracking-wide">
                 {BRAND.name}
               </span>

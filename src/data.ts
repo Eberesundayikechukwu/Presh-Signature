@@ -26,11 +26,9 @@ export const BRAND = {
     },
   ],
   contact: {
-    whatsappUrl: 'https://wa.me/234XXXXXXXXX',
-    whatsappDisplay: '+234 XXXXXXXXX',
-    whatsappNote: 'Replace with your WhatsApp number',
+    whatsappUrl: 'https://wa.me/ +2348123122777',
+    whatsappDisplay: ' +234 8123122777',
     email: 'hello@preshsignature.com',
-    emailNote: 'Replace with your official email',
     location: 'Lagos & across Nigeria',
   },
 };
@@ -48,7 +46,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
       'Custom Celebration Cakes',
     ],
     imageUrl:
-      'https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=1000&q=80',
+      'images/cake.jpg',
     imageAlt: 'Tiered artisan celebration cake with elegant floral and gold accents',
   },
   {
@@ -63,7 +61,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
       'Other Freshly Baked Treats',
     ],
     imageUrl:
-      'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80',
+      'images/baking.jpg',
     imageAlt: 'Freshly baked golden artisan bread and dinner rolls',
   },
   {
@@ -80,7 +78,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
       'Small Chops',
     ],
     imageUrl:
-      'https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=1000&q=80',
+      'images/pastries.jpg',
     imageAlt: 'Golden baked meat pies, pastries, and savory snacks',
   },
   {
@@ -96,7 +94,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
       'Other Nigerian & Continental Dishes',
     ],
     imageUrl:
-      'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80',
+      'images/catering.jpg',
     imageAlt: 'Gourmet Nigerian party jollof rice and event catering spread',
   },
   {
@@ -112,7 +110,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
       'Other Healthy Refreshments',
     ],
     imageUrl:
-      'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=1000&q=80',
+      'images/refreshment.jpg',
     imageAlt: 'Chilled hibiscus zobo, fresh fruit juices, and healthy refreshments',
   },
   {
@@ -127,7 +125,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
       'Customized Food Packages',
     ],
     imageUrl:
-      'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=80',
+      'images/food-tray.jpg',
     imageAlt: 'Gourmet celebration breakfast tray with waffles and fresh fruit',
   },
   {
@@ -141,7 +139,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
       'Customized Gift Packages',
     ],
     imageUrl:
-      'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1000&q=80',
+      'images/special-service.jpg',
     imageAlt: 'Curated luxury event gift packages and celebration setup',
   },
 ];
