@@ -26,10 +26,11 @@ export const BRAND = {
     },
   ],
   contact: {
-    whatsappUrl: 'https://wa.me/ +2348123122777',
-    whatsappDisplay: ' +234 8123122777',
-    email: 'hello@preshsignature.com',
-    location: 'Lagos & across Nigeria',
+    whatsappUrl: 'https://wa.me/2348123122777',
+    whatsappDisplay: ' +2348123122777',
+    email: ' preshsignature1@gmail.com',
+    emailUrl: 'https://mail.google.com/mail/?view=cm&fs=1&to=hello@preshsignature.com',
+    location: 'Port Harcourt & across Nigeria',
   },
 };
 

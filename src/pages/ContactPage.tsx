@@ -26,13 +26,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, initialCat
 
   const constructWhatsAppUrl = () => {
     const text = `Hello Presh Signature!%0A%0A*Name:* ${encodeURIComponent(name || 'Customer')}%0A*Interest:* ${encodeURIComponent(selectedCategory)}%0A*Event Date:* ${encodeURIComponent(eventDate || 'Not specified')}%0A*Message:* ${encodeURIComponent(message || 'I would like to inquire about your catering and baking services.')}`;
-    return `https://wa.me/234XXXXXXXXX?text=${text}`;
+    return `https://wa.me/2348123122777?text=${text}`;
   };
 
   return (
     <div id="page-contact" className="py-8 sm:py-12 space-y-12 sm:space-y-16 px-6 sm:px-8">
       <div className="max-w-6xl mx-auto space-y-12 sm:space-y-16">
-        
+
         {/* Page Header with Entrance Animation */}
         <motion.section
           id="contact-header"
@@ -51,7 +51,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, initialCat
           <p className="text-sm sm:text-base text-[#6E5848] font-normal">
             We look forward to creating memorable flavors and celebrations for you.
           </p>
-        </motion.section>
+           </motion.section>
 
         {/* Contact Cards Strip with Staggered Scroll Entrance & Hover Lift */}
         <section id="contact-methods-strip" className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -79,9 +79,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, initialCat
                 <span className="font-mono text-xs bg-[#F6EFE2] px-2.5 py-1 rounded text-[#5C1A2B] font-medium inline-block">
                   {BRAND.contact.whatsappDisplay}
                 </span>
-                <p className="text-[11px] text-[#A38977] mt-1 italic">
-                  * ({BRAND.contact.whatsappNote})
-                </p>
+
               </div>
             </div>
 
@@ -123,9 +121,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, initialCat
                 <span className="font-mono text-xs bg-[#F6EFE2] px-2.5 py-1 rounded text-[#5C1A2B] font-medium inline-block">
                   {BRAND.contact.email}
                 </span>
-                <p className="text-[11px] text-[#A38977] mt-1 italic">
-                  * ({BRAND.contact.emailNote})
-                </p>
+
               </div>
             </div>
 
@@ -133,7 +129,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, initialCat
               id="contact-btn-email"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              href={`mailto:${BRAND.contact.email}`}
+              href={BRAND.contact.emailUrl}
               className="inline-flex items-center justify-center gap-2 w-full py-3.5 rounded-full bg-[#5C1A2B] text-white text-xs uppercase tracking-widest font-semibold hover:bg-[#461220] transition-colors shadow-sm"
             >
               <span>Send an Email</span>

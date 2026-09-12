@@ -105,7 +105,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
               <a
                 id="footer-email-link"
-                href={`mailto:${BRAND.contact.email}`}
+                href={BRAND.contact.emailUrl}
                 className="flex items-center gap-2.5 text-[#5C1A2B] hover:text-[#C9972B] transition-colors group"
               >
                 <Mail size={16} className="text-[#C9972B] shrink-0" />
