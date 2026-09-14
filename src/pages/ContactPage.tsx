@@ -25,7 +25,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, initialCat
   };
 
   const constructWhatsAppUrl = () => {
-    const text = `Hello Presh Signature!%0A%0A*Name:* ${encodeURIComponent(name || 'Customer')}%0A*Interest:* ${encodeURIComponent(selectedCategory)}%0A*Event Date:* ${encodeURIComponent(eventDate || 'Not specified')}%0A*Message:* ${encodeURIComponent(message || 'I would like to inquire about your catering and baking services.')}`;
+    const text = `Hello Presh Signature!%0A%0A*Name:* ${encodeURIComponent(name || 'Customer')}%0A*Phone:* ${encodeURIComponent(phone || 'Not provided')}%0A*Interest:* ${encodeURIComponent(selectedCategory)}%0A*Event Date:* ${encodeURIComponent(eventDate || 'Not specified')}%0A*Message:* ${encodeURIComponent(message || 'I would like to inquire about your catering and baking services.')}`;
     return `https://wa.me/2348123122777?text=${text}`;
   };
 
@@ -51,7 +51,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, initialCat
           <p className="text-sm sm:text-base text-[#6E5848] font-normal">
             We look forward to creating memorable flavors and celebrations for you.
           </p>
-           </motion.section>
+        </motion.section>
 
         {/* Contact Cards Strip with Staggered Scroll Entrance & Hover Lift */}
         <section id="contact-methods-strip" className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -154,7 +154,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, initialCat
                 Service Area
               </h2>
               <p className="text-sm text-[#6E5848] leading-relaxed">
-                Serving Lagos and catering special celebrations across Nigeria.
+                Proudly serving {BRAND.contact.location} for all your celebrations.
               </p>
               <div className="pt-1 flex items-center gap-2 text-xs text-[#5C1A2B] font-medium">
                 <Clock size={14} className="text-[#C9972B]" />
@@ -329,8 +329,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, initialCat
                 </div>
 
                 {/* Action Buttons */}
-                <div className="pt-2 flex flex-col sm:flex-row items-center gap-3">
-                  <motion.button
+                <div className="flex justify-center pt-2">
+                  {
+
+                  /* <motion.button
                     id="submit-inquiry-btn"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
@@ -339,7 +341,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, initialCat
                   >
                     <Send size={14} />
                     <span>Submit Inquiry</span>
-                  </motion.button>
+                  </motion.button> */}
 
                   <motion.a
                     id="direct-whatsapp-compose-btn"
@@ -351,7 +353,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, initialCat
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full bg-[#25D366] text-white text-xs uppercase tracking-widest font-semibold hover:bg-[#1EBE5D] transition-colors shadow-sm"
                   >
                     <MessageCircle size={15} />
-                    <span>Chat Directly on WhatsApp</span>
+                    <span>Send Inquiry via WhatsApp</span>
                   </motion.a>
                 </div>
               </form>
